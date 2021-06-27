@@ -1,0 +1,104 @@
+.bodysection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: lightgrey;
+  width: 550px;
+  border-radius: 20px;
+  margin: 10px 0;
+  color: white;
+}
+
+.postTitle {
+  padding: 25px 25px;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: medium;
+  justify-content: center;
+}
+
+.postContent {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 18px;
+  -webkit-line-clamp: 3;
+}
+
+.nameOfPerson {
+  width: 20%;
+  float: left;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  border-radius: 20px 0px 0px 20px;
+  font-family: "Open Sans", sans-serif;
+  padding: 40px 20px;
+}
+
+.blogList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+}
+
+.bodysection:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.postTitle1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* delte button and three dots symbol */
+.fa-trash,
+.fa-ellipsis-h {
+  float: right;
+  cursor: pointer;
+  color: black;
+}
+
+/* delteModal */
+.modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  padding-top: 300px;
+  padding-left: 550px;
+  padding-right: 550px;
+}
+
+/* yesButton */
+#yesButton {
+  padding-right: 100px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* noButton */
+#noButton {
+  padding-right: 100px;
+  margin-left: 35px;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Allan";
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+}

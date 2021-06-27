@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <!-- including Css files here -->
+    <!-- including bootstrap cdn and javascript cdn  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/common.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../Css/post.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="font.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    
+</head>
+<!-- TODO: Include all your code for the header and post page here -->
+<!-- SignUp and SignIn Buttons -->
+<body>
+    <header>
+        <div class="header">
+            <button type="button" class="topButtons" data-toggle="modal" data-target="#SignUp">Sign Up</button>
+            <button type="button" class="topButtons" data-toggle="modal" data-target="#myModal">Sign In</button>
+            <a id="pageTitle" class="logo-title">SnipPic</a>
+            <p class="middleText">Share Happiness!</p>
+        </div>
+        <!-- SignUp Modal -->
+        <div class="modal fade" id="SignUp" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal title -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" style="color:red">&times;</button>
+                        <h2 style="text-align: center;">Get Started</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- Full Name -->
+                            <div class="form-group">
+                                <label for="email">Full Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Full Name" id="Full Name"
+                                    required>
+                            </div>
+                            <!-- User Name -->
+                            <div class="form-group">
+                                <label for="email">User Name</label>
+                                <input type="text" class="form-control" placeholder="Enter User Name" id="User Name"
+                                    required>
+                            </div>
+                            <!-- Password -->
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" placeholder="Enter Password" id="pwd" required>
+                            </div>
+                            <!-- Confirm Password  -->
+                            <div class="form-group">
+                                <label for="pwd">Confirm Password:</label>
+                                <input type="password" class="form-control" placeholder="Confirm Password" id="pwd"
+                                    required>
+                            </div>
+                            <!-- SignUP button -->
+                            <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SignIn Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal title -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 style="text-align: center;">Welcome Back!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- User Name -->
+                            <div class="form-group">
+                                <label for="email">User Name</label>
+                                <input type="text" class="form-control" placeholder="Enter User Name" id="User Name"
+                                    required>
+                            </div>
+                            <!-- Password -->
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" placeholder="Enter Password" id="pwd" required>
+                            </div>
+                            <!-- SignUp button -->
+                            <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                            <p style="text-align:center">Not a member? <a data-target="#SignUp" data-toggle="modal"
+                                    href="#SignUp" data-dismiss="modal">Sign Up</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post area to view full post -->
+<div class="containerPost">
+    <div class="postHeader">
+        The legacy of Jimi Hendrix
+    </div>
+    <!-- title of the post -->
+    <div class="title">
+        Jimi
+        <button class="editButton" id="edit-button"
+            style="padding: 10px 20px; background-color: red; color: white; border: 0px; float: right;">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+    </div>
+    <!-- postContent -->
+    <div class="postContent">
+        <p id="edit">Jimmi Hendrix was argubly the greatest instrumentalist in the history music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by  most guitarist in favour of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of <q>Little Wing</q>, Which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style,with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: <q>Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled. fluid vocabulary every bit as personal as the blues with which he began.</q>[3][nb 42]Aledort wrote:<q>In rock guitar,there are but two eras--before Hendrix and after Hendrix.</q></p>
+    </div>
+    <!-- Like button to like the post -->
+    <button class="editButton" onclick="clickCounter()" style="padding: 10px 20px; background-color: red; color: white; border: 0px;"><i class="fa fa-thumbs-up" aria-hidden="true" style="padding-right: 3px;"></i>Like</button>
+    <div id="result" style="margin-top: 10px;"></div>
+    <div>
+        <textarea class="textArea" id="userComments" placeholder="Leave a comment..." rows="4%" cols="180%" style="font-family: 'Open Sans', sans-serif;  padding-left: 10px; padding-top: 3px; margin-top: 30px;" ></textarea>
+    </div>
+    <!-- Comment button to post the comment -->
+    <div style="padding-top: 10px;">
+        <button id="addList" onclick="postComment();" class="editButton" style="padding: 10px 20px; background-color: red; color: white; border: 0px;">Comment</button>
+        <div id="addEventNames"></div>
+            <div>
+                <p id="allComments">All Comments</p>
+            </div>
+                <!-- comment -->
+                <div id="comments">
+                    <p style="background-color: white; padding: 10px; font-size: small;">Great Post! Thanks!</p>
+                </div>
+    </div>
+</div>
+
+<!-- including javascript files  -->
+<script src="../Javascript/post.js"></script>
+</body>
+</html>

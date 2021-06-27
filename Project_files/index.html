@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <!-- including Css files here -->
+    <!-- including bootstrap cdn and javascript cdn  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\Css\common.css" type="text/css" media="all" />
+    <link rel="stylesheet" href=".\Css\index.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="font.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <!-- SignUp and SignIn Buttons -->
+<header>
+    <div class="header">
+        <button type="button" class="topButtons" data-toggle="modal" data-target="#SignUp">Sign Up</button>
+        <button type="button" class="topButtons" data-toggle="modal" data-target="#SignIn">Sign In</button>
+        <a id="pageTitle" class="logo-title">SnipPic</a>
+        <p class="middleText">Share Happiness!</p>
+    </div>
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="SignUp" role="dialog">
+        <div class="modal-dialog" role = "document">
+        <div class="modal-content">
+            <!-- modal title -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" style="color:red">&times;</button>
+                <h2 style="text-align: center;">Get Started</h2>
+            </div>
+            <div class="modal-body">
+                <form action="/action_page.php">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="email">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Full Name" id="Full Name" required>
+                    </div>
+                    <!-- User Name -->
+                    <div class="form-group">
+                        <label for="email">User Name</label>
+                        <input type="text" class="form-control" placeholder="Enter User Name" id="User Name" required>
+                    </div>
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" placeholder="Enter Password" id="pwd" required>
+                    </div>
+                    <!-- Confirm Password  -->
+                    <div class="form-group">
+                        <label for="pwd">Confirm Password:</label>
+                        <input type="password" class="form-control" placeholder="Confirm Password" id="pwd" required>
+                    </div>
+                    <!-- SignUP button -->
+                    <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    <!-- SignIn Modal -->
+    </div><div class="modal fade" id="SignIn" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- modal title -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 style="text-align: center;">Welcome Back!</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- User Name -->
+                        <div class="form-group">
+                            <label for="email">User Name</label>
+                            <input type="text" class="form-control" placeholder="Enter User Name" id="User Name" required>
+                        </div>
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" placeholder="Enter Password" id="pwd" required>
+                        </div>
+                        <!-- SignUp button -->
+                        <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                        <p style="text-align:center">Not a member? <a data-target="#SignUp" data-toggle="modal" href="#SignUp" data-dismiss="modal">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- createPost Button to create a post -->
+
+    <div class="container">
+        <div class="center">
+            <!-- All Posts button to show all post  -->
+            <a href="./html/bloglist.html"><button class="cente" style="color:black;background-color:yellowgreen">All Post</button></a>
+            <button type ="button" class="cente" style="color:black;background-color:yellowgreen" data-toggle="modal"
+                data-target="#createPost">Create Post</button>
+        </div>
+    </div>
+
+    <!-- CreatePost modal -->
+
+    </div>
+    <div class="modal fade" id="createPost" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- CreatePost Title -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 style="text-align: center;">Pen Your Post</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- title input to give the title name to the post -->
+                        <div class="form-group">
+                            <label for="email">Tittle:</label>
+                            <input type="text" class="form-control" id="title" required>
+                        </div>
+                        <!-- textarea to write post content -->
+                        <div class="form-group">
+                            <label for="content">Content:</label>
+                            <div>
+                            <textarea name="content" id="content" cols="75" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <!-- create Button -->
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-success " style="text-align: center">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

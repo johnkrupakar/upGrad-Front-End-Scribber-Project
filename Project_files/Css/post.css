@@ -1,0 +1,68 @@
+.containerPost {
+  padding: 30px 60px 0px 60px;
+}
+
+.postHeader {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: x-large;
+  font-stretch: wider;
+}
+
+.postContent {
+  padding: 20px 0px;
+  text-align: justify;
+  font-size: medium;
+}
+
+.editButton {
+  box-shadow: 10px 10px 10px rgba(231, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.editButton:hover {
+  box-shadow: 10px 10px 15px rgba(182, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* textarea  */
+.textArea {
+  border: 1px;
+  border-color: gray;
+  border-style: solid;
+}
+
+.editButton {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: 0px;
+}
+
+/* commentbox */
+#comments {
+  background-color: whitesmoke;
+  width: 100%;
+  border: 15px solid gray;
+  padding: 05px;
+  margin: 05px;
+}
+
+/* title */
+.title {
+  padding: 20px 0px 0px 0px;
+  font-size: large;
+  font-family: "Alex Brush";
+  font-weight: bold;
+  font-style: italic;
+}
+
+#allComments {
+  padding: 20px 0px 0px 0px;
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
